@@ -1,0 +1,27 @@
+The "vals.txt" file serves as a configuration file for the PlateFetcher project. It contains two crucial pieces of information that are utilized by the system:
+
+Bucket Name:
+
+This is the name of the AWS S3 bucket where temporary images of license plates are stored for processing.
+Example: thisisirony
+Default Region:
+
+It represents the default AWS region used by the system for various services like S3, Textract, etc.
+
+Example: ap-south-1
+
+The file is structured in a way that the Bucket Name and Default Region are separated by a space, allowing for easy retrieval and use within the PlateFetcher application.
+
+Example Content of vals.txt:
+
+Copy code
+thisisirony ap-south-1
+The PlateFetcher system reads this file during its execution to obtain the default AWS S3 bucket name and region. These values are essential for the proper functioning of the application, ensuring that images are stored and processed in the correct AWS environment.
+
+It is important to keep the information in "vals.txt" accurate and up-to-date to ensure the seamless operation of PlateFetcher, especially when dealing with AWS services that rely on specific configurations.
+
+
+
+
+
+
